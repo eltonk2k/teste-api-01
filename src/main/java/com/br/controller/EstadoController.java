@@ -36,7 +36,7 @@ public class EstadoController {
 	}
 	
 	
-	@GetMapping(value="/{estadoId}/cidades")
+	@GetMapping(path="/{estadoId}/cidades")
 	public ResponseEntity<List<CidadeDTO>> findCidades(@PathVariable Long estadoId) {
 		List<Cidade> listCidades = cidadeService.findByEstado(estadoId);
 		List<CidadeDTO> listCidadesDto = listCidades.stream().map(obj -> new CidadeDTO(obj)).collect(Collectors.toList());  

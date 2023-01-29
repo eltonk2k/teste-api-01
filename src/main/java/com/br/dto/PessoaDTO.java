@@ -6,6 +6,8 @@ import javax.validation.constraints.NotEmpty;
 
 import org.hibernate.validator.constraints.Length;
 
+import com.br.domain.Pessoa;
+
 public class PessoaDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
@@ -16,7 +18,15 @@ public class PessoaDTO implements Serializable {
 	private String nome;
 	private String nascimento;
 	
-
+	public PessoaDTO() {
+	}
+	
+	public PessoaDTO(Pessoa pessoa) {
+		this.id = pessoa.getId();
+		this.nome = pessoa.getNome();
+		this.nascimento = pessoa.getNascimento();
+	}
+	
 	public Long getId() {
 		return id;
 	}

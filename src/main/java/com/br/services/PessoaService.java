@@ -40,6 +40,11 @@ public class PessoaService {
 		enderecoRepository.saveAll(pessoa.getEnderecos());
 		return pessoa;
 	}
+//	public Pessoa insert(Pessoa pessoa) {
+//		pessoa.setId(null);
+//		return pessoa = pessoaRepository.save(pessoa);
+//	}
+	
 
 	public Pessoa update(Pessoa pessoa) {
 		Pessoa newPessoa = find(pessoa.getId());

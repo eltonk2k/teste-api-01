@@ -28,7 +28,7 @@ public class SwaggerConfig {
 	}
 
 	private ApiInfo apiInfo() {
-		return new ApiInfo("RESTful API With Spring Boot 2.1.3", "Description about your API", "V!", "Terms Of Service URL", 
+		return new ApiInfo("API With Spring Boot", "Description about your API", "V!", "Terms Of Service URL", 
 				new Contact("BlackFyree", "https://github.com/eltonk2k", "https://www.linkedin.com/in/elielton-silva2019/"), 
 				"License of API", "License of URL", Collections.emptyList());
 	}
